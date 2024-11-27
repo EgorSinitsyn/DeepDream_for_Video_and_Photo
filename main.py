@@ -46,7 +46,7 @@ def run_deep_dream(img, steps=50, step_size=0.01):
     return deprocess_image(img).numpy()
 
 # Разделение видео на кадры
-cam = cv2.VideoCapture('./video.mp4')
+cam = cv2.VideoCapture('video_2.mp4')
 input_fps = cam.get(cv2.CAP_PROP_FPS)
 total_frames = int(cam.get(cv2.CAP_PROP_FRAME_COUNT))
 
